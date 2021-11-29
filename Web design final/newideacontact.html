@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newideacontact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="newidea.html" class="brand"><img src="LogoNoWordsAsset 2.png" height="35px"></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="newidea.html">Home</a>
+            <a href="newidealayouts.html">Layouts</a>
+            <a href="newideaamenitites.html">Amenities</a>
+            <a href="newideaneighborhood.html">Neighborhood</a>
+            <a href="newideacontact.html">Contact</a>
+          </div>
+        </div>
+      </header>
+  
+    
+
+    
+    <div class="contact-section">
+        <div class="contact-info">
+          <div><i class="fas fa-map-marker-alt"></i>409 Wyandotte, Bethlehem, PA 18015</div>
+          <div><i class="fas fa-envelope"></i>contact@email.com</div>
+          <div><i class="fas fa-phone"></i>(484) 000 0000</div>
+          <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+        </div>
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form class="contact" action="" method="post">
+              <input type="text" name="name" class="text-box" placeholder="Name" required>
+              <input type="email" name="email" class="text-box" placeholder="Email" required>
+              <textarea name="message" rows="5" placeholder="Message" required></textarea>
+              <input type="submit" name="submit" class="send-btn" value="Send">
+          </form>
+        </div>
+      </div>
+      
+      <section class="home">
+        <div class="media-icons">
+          <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+      
+  
+      <script type="text/javascript">
+        //Javacript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

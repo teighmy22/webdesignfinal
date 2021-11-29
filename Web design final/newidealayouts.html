@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="newidealayout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+        <a href="newidea.html" class="brand"><img src="LogoNoWordsAsset 2.png" height="35px"></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="newidea.html">Home</a>
+            <a href="newidealayouts.html">Layouts</a>
+            <a href="newideaamenitites.html">Amenities</a>
+            <a href="newideaneighborhood.html">Neighborhood</a>
+            <a href="newideacontact.html">Contact</a>
+          </div>
+        </div>
+      </header>
+    
+      
+      <div class="wrapper">
+
+        <div class="side left">
+              <div class="image dog"></div>
+              <div class="caption">
+                <button class="collapsible">First Floor</button>
+<div class="content">
+  <h3>Three Bedroom Two Bathroom (101)</h3>
+  <img src="3Bed.png">
+  <p>$3,500/Month
+      <br>
+      1,500 Sq Ft
+  </p>
+  
+  
+</div>
+<button class="collapsible">Second Floor</button>
+<div class="content">
+  <h3>Two Bedroom One Bath (201)</h3>
+  <img src="2Bed.png">
+    <p>$2,000/Month
+      <br>
+      1,000 Sq Ft
+  </p>
+
+  <h3>Two Bedroom One Bath (202)</h3>
+  <img src="2Bed.png">
+    <p>$2,000/Month
+      <br>
+      1,000 Sq Ft
+  </p>
+
+</div>
+<button class="collapsible">Thrid Floor</button>
+<div class="content">
+    <h3>Two Bedroom One Bath (301)</h3>
+    <img src="2Bed.png">
+      <p>$2,000/Month
+        <br>
+        1,000 Sq Ft
+    </p>
+  
+    <h3>Two Bedroom One Bath (302)</h3>
+    <img src="2Bed.png">
+      <p>$2,000/Month
+        <br>
+        1,000 Sq Ft
+    </p>
+</div>
+<button class="collapsible">Garden</button>
+<div class="content">
+    <h3>Two Bedroom One Bath (001)</h3>
+    <img src="2Bed.png">
+      <p>$2,000/Month
+        <br>
+        1,000 Sq Ft
+    </p>
+</div>    
+              </div>
+        </div>
+
+        <div class="side right">
+              <div class="image gym"></div>
+              <div class="caption">
+                    <h1></h1>
+                    <a class="button" href="newideacontact.html">Contact</a>
+              </div>
+        </div>
+
+        
+  </div>
+
+  <script>
+  
+        //Javacript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+  
+  
+  
+  var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+    
+</body>
+</html>

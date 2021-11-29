@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="newideaneighborhood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+        <a href="newidea.html" class="brand"><img src="LogoNoWordsAsset 2.png" height="35px"></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="newidea.html">Home</a>
+            <a href="newidealayouts.html">Layouts</a>
+            <a href="newideaamenitites.html">Amenities</a>
+            <a href="newideaneighborhood.html">Neighborhood</a>
+            <a href="newideacontact.html">Contact</a>
+          </div>
+        </div>
+      </header>
+    
+    
+    <div class="wrapper">
+
+        <div class="side left">
+              <div class="image dog"></div>
+              <div class="caption">
+                    <h1><i class="fas fa-location-arrow"></i></h1>
+                    <p>Easy commute to New York City and Philadelphia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati odit quod tempora officia, nesciunt laudantium accusamus explicabo ea minus ipsum ut quis dolores minima nihil doloribus at omnis tenetur earum!</p>
+                    <h1><i class="fas fa-landmark"></i></h1>
+                    <p>Historic neighborhood. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ullam aut saepe eligendi. Sunt, suscipit voluptatum eum ea maxime provident molestias at illo quasi iusto sit dolorem aperiam vel nostrum!</p>
+                    <h1><i class="fas fa-icons"></i></h1>
+                    <p>Festivals. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, qui earum! Quos, quidem hic repellat, dolor debitis quibusdam accusantium velit nostrum maxime et corrupti, amet tempora mollitia ratione facilis porro!</p>
+                    <h1><i class="fas fa-university"></i></h1>
+                    <p>Walking distance to Lehigh University. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vero eaque, aut harum minus adipisci sint accusantium eligendi sequi ipsum est esse a iure. Voluptatibus minima amet et accusamus odit!</p>
+                    
+              </div>
+        </div>
+
+        <div class="side right">
+              <div class="image southside"></div>
+              <div class="caption">
+                    <h1></h1>
+                    <a class="button" href="#">Contact</a>
+              </div>
+        </div>
+
+        
+  </div>
+
+  <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    </script>
+
+  
+</body>
+</html>
